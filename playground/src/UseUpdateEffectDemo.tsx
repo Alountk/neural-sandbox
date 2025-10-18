@@ -4,7 +4,7 @@ import { useUpdateEffect } from './hooks';
 const UseUpdateEffectDemo = () => {
   const [count, setCount] = useState(0);
   const [name, setName] = useState('');
-  const [logs, setLogs] = useState([]);
+  const [logs, setLogs] = useState<string[]>([]);
 
   // useEffect normal - se ejecuta en el primer render Y en cada actualización
   useEffect(() => {
