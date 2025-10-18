@@ -8,14 +8,14 @@ export function useClickOutside<T extends HTMLElement = HTMLElement>(
   React.useEffect(() => {
     const listener = (event: MouseEvent | TouchEvent) => {
       const el = ref?.current;
-      if (!el || el.contains(event.target as Node)) {
+      if (!el || !event.target || !(event.target instanceof Node) || el.contains(event.target as Node)) {
         return;
       }
       handler(event);
     };
 
     document.addEventListener('mousedown', listener);
-    document.addEventListener('touchstart', listener);
+    document.addEventListener('touchstart', listener, { passive: true });
 
     return () => {
       document.removeEventListener('mousedown', listener);
