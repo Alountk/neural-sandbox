@@ -34,7 +34,7 @@ const UseClickOutsideDemo: React.FC = () => {
                 padding: "10px",
               }}
             >
-              <p>Este menu es un menú desplegable. Haz clic fuera para cerrarlo.</p>
+              <p>Este menú es un menú desplegable. Haz clic fuera para cerrarlo.</p>
             </div>
           )}
       </div>
