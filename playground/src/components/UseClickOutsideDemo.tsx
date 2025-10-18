@@ -19,9 +19,17 @@ const UseClickOutsideDemo: React.FC = () => {
       </p>
 
       <div className="demo-controls">
-          <button onClick={() => setIsOpen(true)}>Open Menu</button>
+          <button
+            onClick={() => setIsOpen(true)}
+            aria-expanded={isOpen}
+            aria-controls="demo-menu"
+          >
+            Open Menu
+          </button>
           {isOpen && (
             <div
+              id="demo-menu"
+              role="menu"
               ref={ref}
               style={{
                 position: "absolute",
