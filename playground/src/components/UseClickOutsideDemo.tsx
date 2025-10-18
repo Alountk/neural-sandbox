@@ -4,12 +4,13 @@ import React from "react";
 const UseClickOutsideDemo: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const ref = useClickOutside<HTMLDivElement>(() => {
+  const handleClickOutside = React.useCallback(() => {
     if (isOpen) {
       setIsOpen(false);
     }
-  });
+  }, [isOpen, setIsOpen]);
 
+  const ref = useClickOutside<HTMLDivElement>(handleClickOutside);
   return (
     <div className="hook-demo">
       <h2>useClickOutside Demo</h2>
