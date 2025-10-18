@@ -52,7 +52,7 @@ Nada estable, todo curioso.
 
 Ejemplos:
 - Configurar un mini stack con *Nginx + Node + Redis*
-- Probar contenedores con GPU o WARP
+- Probar contenedores con GPU o *WARP*
 - Jugar con proxies, tunnels o cosas de red
 
 ## 💬 Si quieres curiosear
