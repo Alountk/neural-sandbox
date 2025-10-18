@@ -22,10 +22,10 @@ Esto abrirá el playground en [http://localhost:3000](http://localhost:3000)
 
 ### Agregar un nuevo hook
 
-1. **Crea tu hook** en la carpeta `../hooks/nombreDelHook/`
+1. **Crea tu hook** en `src/tuNuevoHook.js`
 2. **Exporta tu hook** en `src/hooks.js`:
    ```javascript
-   export { tuNuevoHook } from '../../hooks/tuNuevoHook';
+   export { tuNuevoHook } from './tuNuevoHook';
    ```
 3. **Crea un componente demo** en `src/TuNuevoHookDemo.js`
 4. **Agrega el demo** al `App.js`
