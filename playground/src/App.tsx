@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import UseUpdateEffectDemo from './UseUpdateEffectDemo';
+import UseUpdateEffectDemo from './components/UseUpdateEffectDemo';
 
 function App() {
   return (
