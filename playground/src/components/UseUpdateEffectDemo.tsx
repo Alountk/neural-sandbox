@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useUpdateEffect } from '../hooks/hooks';
 
-const UseUpdateEffectDemo = () => {
+const UseUpdateEffectDemo: React.FC = () => {
   const [count, setCount] = useState(0);
   const [name, setName] = useState('');
   const [logs, setLogs] = useState<string[]>([]);

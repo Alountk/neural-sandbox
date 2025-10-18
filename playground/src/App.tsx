@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import UseUpdateEffectDemo from './components/UseUpdateEffectDemo';
+import UseClickOutsideDemo from './components/UseClickOutsideDemo';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div>
       
       <UseUpdateEffectDemo />
+      <UseClickOutsideDemo />
       
       {/* Agregar más demos de hooks */}
     </div>
