@@ -2,7 +2,6 @@ import { useIsMounted } from "../hooks/useIsMounted";
 import React, { useState, useEffect } from "react";
 
 const UseIsMountedDemo: React.FC = () => {
-  const [logs, setLogs] = useState<string[]>([]);
   const [showChild, setShowChild] = useState<boolean>(true);
 
   return (
@@ -53,7 +52,7 @@ const ChildComponent: React.FC = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (isMountedRef.current) {
+      if (isMountedRef()) {
         setChildCount((prev) => prev + 1);
       }
     }, 1000);
@@ -78,7 +77,7 @@ const ChildComponent: React.FC = () => {
       </p>
       <p>
         <strong>Está montado:</strong>{" "}
-        {isMountedRef.current ? "✅ Sí" : "❌ No"}
+        {isMountedRef() ? "✅ Sí" : "❌ No"}
       </p>
     </div>
   );
