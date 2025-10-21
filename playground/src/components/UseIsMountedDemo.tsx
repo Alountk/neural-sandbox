@@ -1,4 +1,4 @@
-import { useIsMounted } from "../hooks/useIsMounted";
+import { useIsMounted } from "../hooks/hooks";
 import React, { useState, useEffect } from "react";
 
 const UseIsMountedDemo: React.FC = () => {
