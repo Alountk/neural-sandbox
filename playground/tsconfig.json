@@ -21,7 +21,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/hooks/*": ["../hooks/*/index"],
+      "@/hooks/*": ["./src/hooks/hooks"],
       "@/components/*": ["./src/components/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/*": ["./src/*"]

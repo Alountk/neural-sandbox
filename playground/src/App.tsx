@@ -18,7 +18,7 @@ function App() {
           </p>
         </div>
         
-        <div className="space-y-8">
+        <div className="space-y-8 flex flex-col gap-6">
           <UseUpdateEffectDemo />
           <UseClickOutsideDemo />
           <UseIsMountedDemo />
