@@ -15,10 +15,14 @@ const UseDebounceValueDemo: React.FC = () => {
       </p>
 
       <div className="demo-controls">
-         <input
-            type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+        <label htmlFor="debounce-input" style={{ display: "block", marginBottom: "4px" }}>
+          Valor de entrada:
+        </label>
+        <input
+          id="debounce-input"
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
         />
       </div>
             <div className="demo-output">
