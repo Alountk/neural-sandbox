@@ -9,7 +9,7 @@ const UseDebounceValueDemo: React.FC = () => {
     <div className="hook-demo">
       <h2>useDebounceValue Demo</h2>
       <p>
-        <code>useDebounceValue</code> es un hook que te permite debilitar el
+        <code>useDebounceValue</code> es un hook que te permite retrasar el
         valor de entrada de un componente. Es útil para optimizar el rendimiento
         al evitar actualizaciones de estado innecesarias.
       </p>
