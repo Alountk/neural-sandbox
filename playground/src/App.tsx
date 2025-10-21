@@ -3,6 +3,7 @@ import './App.css';
 import UseUpdateEffectDemo from './components/UseUpdateEffectDemo';
 import UseClickOutsideDemo from './components/UseClickOutsideDemo';
 import UseIsMountedDemo from './components/UseIsMountedDemo';
+import UseDebounceValueDemo from './components/UseDebounceValueDemo';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <UseUpdateEffectDemo />
       <UseClickOutsideDemo />
       <UseIsMountedDemo />
+      <UseDebounceValueDemo />
       
       {/* Agregar más demos de hooks */}
     </div>

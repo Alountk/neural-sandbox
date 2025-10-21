@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import { useUpdateEffect } from '../hooks/hooks';
+import React, { useState, useEffect } from 'react';
 
 const UseUpdateEffectDemo: React.FC = () => {
   const [count, setCount] = useState(0);
