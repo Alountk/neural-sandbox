@@ -47,12 +47,7 @@ const UseDebounceValueDemo: React.FC = () => {
         <strong>💡 Observa:</strong>
         <ul style={{ margin: "10px 0", paddingLeft: "20px" }}>
           <li>
-            <code>useDebounceValue</code> es un hook que te permite retrasar el
-            valor de entrada de un componente.
-          </li>
-          <li>
-            Es útil para optimizar el rendimiento al evitar actualizaciones de
-            estado innecesarias.
+            El valor mostrado debajo de "Valor Debounced" solo se actualiza después de 500ms sin cambios en el input.
           </li>
         </ul>
       </div>
