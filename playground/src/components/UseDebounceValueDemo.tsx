@@ -6,7 +6,7 @@ const UseDebounceValueDemo: React.FC = () => {
   const debouncedValue = useDebounceValue(inputValue, 500);
 
   return (
-    <div className="hook-demo">
+    <div className="hook-demo bg-slate-50 p-6 rounded-lg shadow-md">
       <h2>useDebounceValue Demo</h2>
       <p>
         <code>useDebounceValue</code> es un hook que te permite retrasar el
@@ -16,13 +16,13 @@ const UseDebounceValueDemo: React.FC = () => {
 
       <div className="demo-controls">
         <label
+          className="block mb-2 font-medium"
           htmlFor="debounce-input"
-          style={{ display: "block", marginBottom: "4px" }}
         >
           Valor de entrada:
         </label>
         <input
-          id="debounce-input"
+          className="border p-2 rounded"
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}

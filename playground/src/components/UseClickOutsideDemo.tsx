@@ -12,7 +12,7 @@ const UseClickOutsideDemo: React.FC = () => {
 
   const ref = useClickOutside<HTMLDivElement>(handleClickOutside);
   return (
-    <div className="hook-demo">
+    <div className="hook-demo bg-slate-50 p-6 rounded-lg shadow-md">
       <h2>useClickOutside Demo</h2>
       <p>
         <code>useClickOutside</code> es un hook que te permite detectar clics fuera de un elemento.
@@ -21,6 +21,7 @@ const UseClickOutsideDemo: React.FC = () => {
 
       <div className="demo-controls">
           <button
+            className="bg-blue-500 text-white px-4 py-2 rounded"
             onClick={() => setIsOpen(true)}
             aria-expanded={isOpen}
             aria-controls="demo-menu"

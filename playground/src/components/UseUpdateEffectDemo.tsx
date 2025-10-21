@@ -19,26 +19,27 @@ const UseUpdateEffectDemo: React.FC = () => {
   const clearLogs = () => setLogs([]);
 
   return (
-    <div className="hook-demo">
+    <div className="hook-demo bg-slate-50 p-6 rounded-lg shadow-md">
       <h2>useUpdateEffect Demo</h2>
       <p>
         <code>useUpdateEffect</code> es como <code>useEffect</code>, pero se salta la primera ejecución.
         Es útil cuando quieres que un efecto solo se ejecute en las actualizaciones, no en el montaje inicial.
       </p>
       
-      <div className="demo-controls">
-        <button onClick={() => setCount(c => c + 1)}>
+      <div className="flex gap-4 demo-controls">
+        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => setCount(c => c + 1)}>
           Incrementar Count ({count})
         </button>
         
         <input
+          className="border p-2 rounded"
           type="text"
           placeholder="Escribe algo..."
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        
-        <button onClick={clearLogs}>
+
+        <button className="bg-red-500 text-white px-4 py-2 rounded" onClick={clearLogs}>
           Limpiar Logs
         </button>
       </div>

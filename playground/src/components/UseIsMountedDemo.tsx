@@ -5,7 +5,7 @@ const UseIsMountedDemo: React.FC = () => {
   const [showChild, setShowChild] = useState<boolean>(true);
 
   return (
-    <div className="hook-demo">
+    <div className="hook-demo bg-slate-50 p-6 rounded-lg shadow-md">
       <h2>useIsMounted Demo</h2>
       <p>
         <code>useIsMounted</code> es un hook que te permite verificar si un
@@ -14,7 +14,7 @@ const UseIsMountedDemo: React.FC = () => {
       </p>
 
       <div className="demo-controls">
-        <button onClick={() => setShowChild(!showChild)}>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => setShowChild(!showChild)}>
           {showChild ? "Desmontar" : "Montar"} Componente Hijo
         </button>
       </div>
