@@ -1,27 +1,11 @@
 import data from '../data/sample.json';
-
-type ProgramType = 'movie' | 'series';
-
-interface MediaImages {
-    'Poster Art': {
-        url: string;
-        width: number;
-        height: number;
-    };
-}
-
-interface MediaItem {
-    title: string;
-    description: string;
-    programType: ProgramType;
-    images: MediaImages;
-    releaseYear: number;
-}
+import type { MediaItem } from '../types';
 
 export function fetchMovies(): Promise<MediaItem[]> {
     return new Promise<MediaItem[]>(resolve => {
         setTimeout(() => {
             const movies = data.entries.filter(item => item.programType === 'movie');
+            console.log({ movies });
             resolve(movies as MediaItem[]);
         }, 500);
     });
