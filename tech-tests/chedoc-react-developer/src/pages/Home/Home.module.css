@@ -1,0 +1,42 @@
+section.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    background: white;
+    height: calc(100vh - 420px);
+    width: 100%;
+}
+
+p.home-description {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+div.home-card {
+    height: 200px;
+    width: 115px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(31, 30, 30);
+    background-image: url('../../assets/placeholder.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-position: center;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background-color: grey;
+        color: rgb(92, 92, 92);
+    }
+}
