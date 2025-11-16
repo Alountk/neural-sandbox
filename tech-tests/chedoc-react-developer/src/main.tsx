@@ -1,14 +1,10 @@
-import { StrictMode } from "react";
-import { hydrateRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.tsx";
-import { Router } from "wouter";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.tsx'
 
-hydrateRoot(
-  document.getElementById("root")!,
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </StrictMode>
-);
+    <App />
+  </StrictMode>,
+)
