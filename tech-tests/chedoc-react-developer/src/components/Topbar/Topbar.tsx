@@ -1,8 +1,8 @@
-import './Topbar.module.css'
+import styles from './Topbar.module.css'
 
 export default function Topbar() {
     return (
-        <nav className="topbar">
+        <nav className={styles.topbar}>
             Topbar
         </nav>
     )
