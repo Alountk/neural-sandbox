@@ -18,3 +18,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+main {
+  display: block;
+  min-height: calc(100vh - 120px); /* Adjust based on header and footer height */
+}
